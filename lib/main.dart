@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:test_usd/models/day_transaction_model.dart';
 import 'package:test_usd/widgets/day_view.dart';
 import 'package:test_usd/widgets/header.dart';
@@ -13,6 +14,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+
     return MaterialApp(
       title: 'Test USD applocation',
       theme: ThemeData(
